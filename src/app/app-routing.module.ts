@@ -33,7 +33,6 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'resetPassword', loadComponent: () => import('./reset-password/reset-password.component').then(mod => mod.ResetPasswordComponent) },
   { path: 'forgetPassword', loadComponent: () => import('./forget-password/forget-password.component').then(mod => mod.ForgetPasswordComponent) },
-  { path: 'profile', loadComponent: () => import('./profile/profile.component').then(mod => mod.ProfileComponent) },
   { path: '**', component: NotfoundComponent },
 ];
 
